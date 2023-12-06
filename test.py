@@ -6,7 +6,7 @@ if __name__ == "__main__":
     gender_analyzer = FaceStudy('gender', 'Gender Detection')
     race_analyzer = FaceStudy('race', 'Race Detection')
 
-    emotion_analyzer.run()
-    # age_analyzer.run()  
+    # emotion_analyzer.run()
+    age_analyzer.run()  
     # gender_analyzer.run()
     # race_analyzer.run()
