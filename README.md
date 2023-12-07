@@ -44,8 +44,10 @@ Dominant emotion: neutral
 Action: emotion: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 19.23it/s]
 Dominant emotion: neutral
 ```
+Ao executar o programa, a seguinte janela será exibida com o tipo de analise requerida, no caso do teste, Emotion
 
-![Alt Text](https://github.com/)
+
+![Demo](https://github.com/JoaoVictorRodrigues/FaceStudy/blob/main/images/demo.gif)
 
 
 
