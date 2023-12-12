@@ -1,5 +1,5 @@
 import asyncio
-import cv2
+import cv2 as cv2
 from deepface import DeepFace
 
 class AsyncFaceStudy:
@@ -26,8 +26,12 @@ class AsyncFaceStudy:
 
     async def run(self):
         cap = cv2.VideoCapture(0)
+        FPS = 30
+        WIN = self.window_title
+        delay = round(1000 / FPS)
+        cv2.namedWindow(WIN)
 
-        while True:
+        while cv2.getWindowProperty(WIN, cv2.WND_PROP_VISIBLE):
             ret, frame = cap.read()
 
             result = await self.analyze(frame)
@@ -41,7 +45,7 @@ class AsyncFaceStudy:
 
             cv2.imshow(self.window_title, frame)
 
-            if cv2.waitKey(1) & 0xFF == ord('q'):
+            if cv2.waitKey(delay)  == ord('q'):
                 break
 
         cap.release()
@@ -69,8 +73,12 @@ class SyncFaceStudy:
 
     def run(self):
         cap = cv2.VideoCapture(0)
+        FPS = 30
+        WIN = self.window_title
+        delay = round(1000 / FPS)
+        cv2.namedWindow(WIN)
 
-        while True:
+        while cv2.getWindowProperty(WIN, cv2.WND_PROP_VISIBLE):
             ret, frame = cap.read()
 
             result = self.analyze(frame)
@@ -80,8 +88,10 @@ class SyncFaceStudy:
 
             cv2.imshow(self.window_title, frame)
 
-            if cv2.waitKey(1) & 0xFF == ord('q'):
+            if cv2.waitKey(delay) == ord('q'):
                 break
-
         cap.release()
-        cv2.destroyAllWindows()
+        cv2.destroyWindow(WIN)
+        return 0
+        
+        

@@ -23,12 +23,15 @@ from faceStudy import FaceStudy, AsyncFaceStudy
 
 Abaixo você pode encontrar um exemplo de como utilizar a biblioteca
 ```python
-from faceStudy import FaceStudy, AsyncFaceStudy
+import asyncio
+from FaceStudy import AsyncFaceStudy, SyncFaceStudy
 
 if __name__ == "__main__":
-  emotion_analyzer = FaceStudy('emotion', 'Emotion Detection')
-
-  emotion_analyzer.run()
+    #anlyze_type: pode receber um dos quatro tipos de análise:
+    #'emotion', 'age', 'gender' or 'race'
+    sync_face_study = SyncFaceStudy(analyze_type='emotion' window='Sync Face Study')
+    
+    sync_face_study.run()
 ```
 
 Na pasta [/test](./test/) você encontra exemplos de uso sincronos e assincronos. 
@@ -48,6 +51,8 @@ Ao executar o programa, a seguinte janela será exibida com o tipo de analise re
 
 
 ![Demo](https://github.com/JoaoVictorRodrigues/FaceStudy/blob/main/images/demo.gif)
+
+Para encerrar a janela de análise, basta apretar `q` ou fechar a janela.
 
 
 

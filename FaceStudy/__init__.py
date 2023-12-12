@@ -1,1 +1,1 @@
-from .FaceStudy import FaceStudy, AsyncFaceStudy
+from .FaceStudy import AsyncFaceStudy, SyncFaceStudy
