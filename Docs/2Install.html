@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Índice &#8212; documentação FaceStudy </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=8946c2f5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=000972dd"></script>
+    <link rel="index" title="Índice" href="#" />
+    <link rel="search" title="Buscar" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+
+<h1 id="index">Instalação</h1>
+
+<div>
+  Para que a FaceStudy seja utilizada ela precisa de bibliotecas auxiliares
+  que precisam ser importadas previamente. A primeira é a asyncio que permitirá
+  a utilização de funções assíncronas que poderão ser úteis dependendo 
+  da aplicação. A segunda é a cv2 para que seja possível fazer a análise facial
+  em tempo real com o uso da webcam. E a última é a DeepFace que é a responsável
+  por fazer a análise das informações e devolver os dados desejados.
+</div>
+
+
+<p></p>
+Setup - Importando as bibliotecas externas necessárias:
+<p> </p>
+  <div class="code-box" style="background-color: #f4f4f4;border: 1px solid #ccc;
+  -radius: 5px;padding: 10px;font-family: 'Courier New', monospace;">
+    <p>import asyncio</p>
+    <p>import cv2</p>
+    <p>from deepface import DeepFace</p>
+  </div>
+  <p></p>
+
+  Importando a versão sincrona e assíncrona da FaceStudy
+  <div class="code-box" style="background-color: #f4f4f4;border: 1px solid #ccc;
+  -radius: 5px;padding: 10px;font-family: 'Courier New', monospace;">
+    <p>from .FaceStudy import FaceStudy, AsyncFaceStudy</p>
+  </div>
+  <p></p>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">FaceStudy</a></h1>
+
+
+<h3>Navegação</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Busca rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Gabriela Choichit, Guilherme Carvalho e João Rodrigues.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
