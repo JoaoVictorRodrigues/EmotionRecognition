@@ -1,0 +1,8 @@
+#_config.yml
+
+url: 'https://joaovictorrodrigues.github.io/' # your main domain
+baseurl: 'FaceStudy/' # if you're using custom domain keep this blank example: baseurl: ''
+
+theme: jekyll-rtd-theme
+
+

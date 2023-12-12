@@ -50,11 +50,7 @@ Dominant emotion: neutral
 Ao executar o programa, a seguinte janela será exibida com o tipo de analise requerida, no caso do teste, Emotion
 
 
-![Demo](https://github.com/JoaoVictorRodrigues/FaceStudy/blob/main/images/demo.gif)
+![](https://github.com/JoaoVictorRodrigues/FaceStudy/blob/main/images/demo.gif)
+<img src="https://joaovictorrodrigues.github.io/FaceStudy/images/demo.gif" alt="zigzag" />
 
 Para encerrar a janela de análise, basta apretar `q` ou fechar a janela.
-
-
-
-
-
